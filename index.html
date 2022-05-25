@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container py-5 border-bottom border-1 borderColor">
+            <h1>
+                Bookmarker App
+            </h1>
+    </div>
+    <div class="container bgColor my-4">
+        <div class="bookContain w-75 m-auto py-5">
+            <p class="text-center mb-4 fw-bold">Bookmark your favorite sites</p>
+            <label for="validationCustom02" class="w-100 text-center pb-3 fw-bold"> Site Name</label>
+            <input type="text" oninput="validateName()" id="bookmarkerName" id="validationCustom02"
+                class="form-control mb-4" placeholder="Bookmarker Name" required>
+            <div class="invalid-feedback d-none my-2" id="input1">
+                Please enter valid name.
+            </div>
+
+            <label for="validationCustom03" class="w-100 text-center pb-3 fw-bold"> Site URL</label>
+            <input type="text" oninput="validateSiteURL()" id="websiteUrl" id="validationCustom03" class="form-control"
+                placeholder="Website URL" required>
+            <div class="invalid-feedback d-none my-2" id="input2">
+                Please enter valid site url.
+            </div>
+
+            <div class="form-btn m-auto w-100 text-center mt-5">
+                <button class="btn btn-blue" onclick="addBookName()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container bgGradiant">
+        <div class="bookTable my-3 w-75 m-auto py-3">
+            <table class="table table-borderless text-capitalize fw-bold fs-4">
+                <tbody id="myTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="w-75 m-auto py-4 border-top border-1 borderColor">
+                <p>
+                    © 2019 Bookmarker Inc.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

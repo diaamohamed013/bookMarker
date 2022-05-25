@@ -1,0 +1,33 @@
+.borderColor {
+    border-color: #999;
+}
+
+.bgColor {
+    background-color: #eee;
+}
+
+.bgGradiant {
+    background-image: linear-gradient(#EEE, #FFF);
+}
+
+.btn-blue {
+    background-color: #1167c4;
+    color: white !important;
+    border: 1px solid #1167c4;
+}
+
+h1, footer p {
+    color: #aaa;
+}
+
+.bookContain p {
+    font-size: 1.75rem;
+}
+
+input {
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
